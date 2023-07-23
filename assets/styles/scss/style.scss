@@ -1,0 +1,74 @@
+@import "colors";
+@import 'fonts';
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $Dark-Grayish-Blue;
+}
+.box-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+	background-color: $Grayish-Blue;
+	.title {
+		color: $Neon-Green;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	.quote {
+		color: $Light-Cyan;
+		font-weight: 600;
+	}
+	.full-bar {
+		width: 100%;
+		height: 1px;
+		background-color: rgba($color: $Light-Cyan, $alpha: .5);
+		.equal {
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 28px;
+			color: $Light-Cyan;
+			background-color: $Grayish-Blue;
+			.fa-equals {
+				transform: rotate(90deg);
+				font-size: 26px;
+				font-weight: 800;
+			}
+		}
+	}
+	.new-quote {
+		width: 3.75rem;
+		height: 3.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 0%;
+		transform: translateY(50%);
+		border: none;
+		border-radius: 50%;
+		transition: ease-out 300ms;
+		background-color: $Neon-Green;
+		&:hover {
+			box-shadow: 0px 0px 10px $Neon-Green;
+		}
+		&:active {
+			.fa-dice-five {
+				transition: all 200ms;
+				opacity: .8;
+			}
+		}
+		.fa-dice-five {
+			font-size: 26px;
+			color: $Dark-Blue;
+		}
+	}
+}
