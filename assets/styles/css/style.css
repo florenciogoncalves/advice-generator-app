@@ -13,14 +13,14 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: #323a49; }
+  background-color: #1f2632; }
 
 .box-container {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   position: relative;
-  background-color: #4e5d73; }
+  background-color: #323a49; }
   .box-container .title {
     color: #52ffa8;
     font-size: 14px;
@@ -40,7 +40,7 @@ body {
       transform: translate(-50%, -50%);
       font-size: 28px;
       color: #cee3e9;
-      background-color: #4e5d73; }
+      background-color: #323a49; }
       .box-container .full-bar .equal .fa-equals {
         transform: rotate(90deg);
         font-size: 26px;
@@ -65,6 +65,6 @@ body {
       opacity: .8; }
     .box-container .new-quote .fa-dice-five {
       font-size: 26px;
-      color: #1f2632; }
+      color: #323a49; }
 
 /*# sourceMappingURL=style.css.map */
